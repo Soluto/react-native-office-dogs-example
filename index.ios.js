@@ -20,7 +20,7 @@ class DoggyView extends React.Component {
          Dogs!
        </Text>
        <View>
-       <Dog name={name} furColor={furColor} />
+       <Dog name={name} furColor={furColor} breed={breed} />
       </View>
      </View>
    );
