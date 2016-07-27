@@ -9,6 +9,8 @@ import {
  View
 } from 'react-native';
 
+import Dog from './DogView.js'
+
 class DoggyView extends React.Component {
  render() {
    const {name, furColor, breed} = this.props;
@@ -18,7 +20,7 @@ class DoggyView extends React.Component {
          Dogs!
        </Text>
        <View>
-         <Text key={name}>{name}:{breed}:{furColor}{"\n"}</Text>
+       <Dog name={name} furColor={furColor} />
       </View>
      </View>
    );
