@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0326ED8C59AB2606326AA016 /* Pods_OfficeDogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84A06EF2F436B8FB05C0669 /* Pods_OfficeDogs.framework */; };
 		D826E27F1D48C9A1008A677B /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826E27E1D48C9A1008A677B /* Dog.swift */; };
 		D893565F1D48C70D00524184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D893565E1D48C70D00524184 /* AppDelegate.swift */; };
 		D89356611D48C70D00524184 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89356601D48C70D00524184 /* MasterViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40D403169AD338547CACDD8F /* Pods-OfficeDogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfficeDogs.release.xcconfig"; path = "Pods/Target Support Files/Pods-OfficeDogs/Pods-OfficeDogs.release.xcconfig"; sourceTree = "<group>"; };
 		D826E27E1D48C9A1008A677B /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		D893565B1D48C70D00524184 /* OfficeDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficeDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D893565E1D48C70D00524184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		D89356671D48C70D00524184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D893566A1D48C70E00524184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D893566C1D48C70E00524184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84A06EF2F436B8FB05C0669 /* Pods_OfficeDogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfficeDogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDFF292348C01E8E65F3126 /* Pods-OfficeDogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfficeDogs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OfficeDogs/Pods-OfficeDogs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0326ED8C59AB2606326AA016 /* Pods_OfficeDogs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D6845A411F9604E097B8A86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECDFF292348C01E8E65F3126 /* Pods-OfficeDogs.debug.xcconfig */,
+				40D403169AD338547CACDD8F /* Pods-OfficeDogs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7465FE3520AC69DC8BD8161E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E84A06EF2F436B8FB05C0669 /* Pods_OfficeDogs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D89356521D48C70D00524184 = {
 			isa = PBXGroup;
 			children = (
 				D893565D1D48C70D00524184 /* OfficeDogs */,
 				D893565C1D48C70D00524184 /* Products */,
+				4D6845A411F9604E097B8A86 /* Pods */,
+				7465FE3520AC69DC8BD8161E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D893566F1D48C70E00524184 /* Build configuration list for PBXNativeTarget "OfficeDogs" */;
 			buildPhases = (
+				B499087393CFEF45AD1F8ABA /* [CP] Check Pods Manifest.lock */,
 				D89356571D48C70D00524184 /* Sources */,
 				D89356581D48C70D00524184 /* Frameworks */,
 				D89356591D48C70D00524184 /* Resources */,
+				D2F08BA9FD80CF3AAA2B9E1D /* [CP] Embed Pods Frameworks */,
+				FDB84D6A7C91BEE55F0755F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B499087393CFEF45AD1F8ABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2F08BA9FD80CF3AAA2B9E1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OfficeDogs/Pods-OfficeDogs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDB84D6A7C91BEE55F0755F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OfficeDogs/Pods-OfficeDogs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D89356571D48C70D00524184 /* Sources */ = {
@@ -255,6 +330,7 @@
 		};
 		D89356701D48C70E00524184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECDFF292348C01E8E65F3126 /* Pods-OfficeDogs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OfficeDogs/Info.plist;
@@ -266,6 +342,7 @@
 		};
 		D89356711D48C70E00524184 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D403169AD338547CACDD8F /* Pods-OfficeDogs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OfficeDogs/Info.plist;
