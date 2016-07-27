@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import React
 
 class MasterViewController: UITableViewController {
 
@@ -43,10 +44,9 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let dog = dogs[indexPath.row]
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = dog
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
+                let jscodeLocation = NSURL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
+                let controller = (segue.destinationViewController as! UINavigationController).topViewController!
+                controller.view = RCTRootView(bundleURL: jscodeLocation, moduleName: "DoggyView", initialProperties: dog.asDictionary() as [NSObject:AnyObject], launchOptions: nil)
             }
         }
     }
