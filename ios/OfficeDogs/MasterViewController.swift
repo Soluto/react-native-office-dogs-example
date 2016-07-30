@@ -12,9 +12,9 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var dogs = [
-        Dog(name: "Django", furColor: UIColor.whiteColor(), breed: "Poodle Terrir mix"),
-        Dog(name: "Zoe", furColor: UIColor.whiteColor(), breed: "Canaan Basenji mix"),
-        Dog(name: "Shisel", furColor: UIColor.brownColor(), breed: "Shitzu Jack Russle Terrier mix")
+        Dog(name: "Django", furColor: UIColor.whiteColor(), breed: "Poodle Terrir mix", imageUrl: "https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc1/t31.0-8/1941398_10152272495227766_1809106582_o.jpg"),
+        Dog(name: "Zoe", furColor: UIColor.whiteColor(), breed: "Canaan Basenji mix", imageUrl: "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xta1/t31.0-8/13055644_10154150943759650_5315161072180650745_o.jpg"),
+        Dog(name: "Shisel", furColor: UIColor.brownColor(), breed: "Shitzu Jack Russle Terrier mix", imageUrl: "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xta1/v/t1.0-9/12919758_10153551710274607_1732533953813995039_n.jpg?oh=a4a8dc47fb6da96ca91e05bf4e517856&oe=58175D48&__gda__=1478639109_00140bb3e6e495282f32fb558ffb530e")
     ]
 
     override func viewDidLoad() {
