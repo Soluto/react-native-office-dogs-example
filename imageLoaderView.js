@@ -12,7 +12,7 @@ class ImageLoaderView extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      keyword: props.keyword
+      urlToLoad: props.imageUrl
     };
   }
   render() {
@@ -26,7 +26,7 @@ class ImageLoaderView extends React.Component {
 
   componentDidMount() {
     setTimeout(function() {
-      this.setState({imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Hotdog_-_Evan_Swigart.jpg"});
+      this.setState({imageUrl: this.state.urlToLoad});
     }.bind(this), 5000)
 
   }

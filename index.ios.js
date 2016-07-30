@@ -13,14 +13,13 @@ import Dog from './DogView.js'
 
 class DoggyView extends React.Component {
  render() {
-   const {name, furColor, breed} = this.props;
    return (
      <View style={styles.container}>
        <Text style={styles.dogsTitle}>
          Dogs!
        </Text>
        <View>
-       <Dog name={name} furColor={furColor} breed={breed} />
+       <Dog dog={this.props} />
       </View>
      </View>
    );

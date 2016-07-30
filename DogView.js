@@ -9,8 +9,8 @@ import ImageLoaderView from "./imageLoaderView.js"
 function RNDog (props)  {
   return (
     <View>
-      <Text key={props.name}>{props.name}:{props.furColor}{"\n"}</Text>
-      <ImageLoaderView keyword={props.breed}/>
+      <Text key={props.dog.name}>{props.dog.name}:{props.dog.furColor}{"\n"}</Text>
+      <ImageLoaderView imageUrl={props.dog.imageUrl}/>
    </View>
   )
 };
