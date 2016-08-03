@@ -11,12 +11,12 @@ import UIKit
 
 struct Dog {
     let name: String
-    let furColor: UIColor
+    let furColor: String
     let breed: String
     let imageUrl: String
     
     func asDictionary() -> [String:String] {
-        let colorComponents = CGColorGetComponents(furColor.CGColor)
-        return ["name" : name, "furColor" : "\(colorComponents[0])\(colorComponents[1])\(colorComponents[2])", "breed" : breed, "imageUrl" : imageUrl]
+        
+        return ["name" : name, "furColor" : furColor, "breed" : breed, "imageUrl" : imageUrl]
     }
 }
