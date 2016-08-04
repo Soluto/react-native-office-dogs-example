@@ -16,7 +16,6 @@ struct Dog {
     let imageUrl: String
     
     func asDictionary() -> [String:String] {
-        let colorComponents = CGColorGetComponents(furColor.CGColor)
         return ["name" : name, "furColor" : furColor, "breed" : breed, "imageUrl" : imageUrl]
     }
 }
